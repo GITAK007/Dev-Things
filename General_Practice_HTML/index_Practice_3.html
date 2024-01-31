@@ -1,0 +1,237 @@
+<!-- 1) * Bookmarks  -> Mean, to save or store of link to the Target  in our closest view through which i can redirect that part easily and fastly.
+    step 1 -> create a 'id' of the Target 
+    step 2 -> Place the 'id' with '#'' (#id) in the 'a' tag where i want and the give bookmark name that specifies that target . 
+
+    2) * <div> :  The Content Division element ->
+      .The <div> HTML element is the generic container for flow content.
+      .It has no effect on the content or layout until styled in some way 
+       using CSS (e.g. styling is directly applied to it, or some kind of layout model
+        like Flexbox is applied to its parent element).
+
+        Ex ->  <div class="warning">
+                  <img src="/media/examples/leopard.jpg"
+                   alt="An intimidating leopard.">
+                  <p>Beware of the leopard</p>
+               </div>
+
+      . As a "pure" container, the <div> element does not inherently represent anything.
+      . Instead, it's used to group content so it can be easily styled using the class or id attributes,
+        marking a section of a document as being written in a different language (using the lang attribute), and so on.
+      . Its a block element.
+        
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ak Practice 3</title>
+
+
+    <style>
+        div{
+            background-color: rgb(109, 175, 191);
+            /* display: inline; */
+        }
+    
+        .divclass{   /* use '.' with className to access the class   */
+            background-color: rgb(0, 98, 255);
+            display: inline;
+
+        }
+    
+        #secdiv {   /* use '#' with classId to access the Id div  */
+        background-color: yellowgreen;
+        }
+
+        span{
+            background-color: blueviolet;
+            display: block;
+        }
+    </style>
+
+ <!-- Styling for Class -->
+    <style>
+    .note {
+        font-style: italic;
+        font-weight: bold;
+    }
+    
+    .editorial {
+        background: rgb(255, 0, 0, 0.25);
+        padding: 10px;
+    }
+    
+    .editorial:before {
+        content: 'Editor: ';
+    }
+</style>
+    
+<!-- Style for  div Class city -->
+<style>
+    .city {
+      background-color: tomato;
+      color: white;
+      border: 2px solid black;
+      margin: 20px;
+      padding: 20px;
+      /* display: inline; */
+    }
+    </style>
+
+
+
+</head>
+
+<body>
+<!--     
+    <a href="tel:+916203119469"> connect the call</a>
+    <br>
+    <a href="mailto:rockshouter16@gmail.com"> send a mail</a> -->
+
+    <!-- <div>kalua</div> -->
+
+<!--  3) " Class "->
+        See the difference output in  1&2  and 3&4
+        <h3><p>Class</p></h3>
+    
+        1)--> <p>Narrator: This is the beginning of the play.</p>
+        <!-- 2)--> <p class="note editorial">Above point sounds a bit obvious. Remove/rewrite?</p>
+
+        <!-- 3) --> <p>Narrator: I must warn you now folks that this beginning is very exciting.</p>
+        <!-- 4) --> <p class="note">[Lights go up and wind blows; Caspian enters stage right]</p>
+
+  
+    <div class="divclass">hey  kalua </div> <!--  Create a class -->
+
+    <div class="city">
+        <h2>London</h2>
+        <p>London is the capital of England.</p>
+      </div>
+      
+      <div class="city">
+        <h2>Paris</h2>
+        <p>Paris is the capital of France.</p>
+      </div>
+      
+      <div class="city">
+        <h2>Tokyo</h2>
+        <p>Tokyo is the capital of Japan.</p>
+
+      </div>
+
+    
+    <div id="secdiv">hey  kalua </div> <!--  Create a id -->
+
+    <br>
+    <br>
+
+    <!--  Div Is 'block' container tag it covering all horizontal area -->
+    <!--  And So Span is 'inline' container tag , by  default this display in same line -->
+
+    <!-- Example of inline element 'span' tag -->
+    <span>hey kalug</span>
+    <span>hey Ak</span>
+
+
+    <!-- 4) " Semantics " -> In programming, Semantics refers to the meaning of a
+                             piece of code — for example "what effect does running that 
+                             line of JavaScript have?", or "what purpose or role does
+                             that HTML element have" (rather than "what does it look like?".)
+                             
+    Some of the benefits from writing semantic markup are as follows:
+      .Search engines will consider its contents as important keywords to 
+       influence the page's search rankings (see SEO).
+    
+      .Screen readers can use it as a signpost to help visually
+       impaired users navigate a page.
+
+      .Finding blocks of meaningful code is significantly easier 
+       than searching through endless divs with or without semantic
+       or namespaced classes.
+
+     Semantic elements-
+      These are some of the roughly 100 semantic elements available:
+        <article>
+        <aside>
+        <details>
+        <figcaption>
+        <figure>
+        <form>
+        <footer>
+        <header>
+        <main>
+        <mark>
+        <nav>
+        <section>
+            etc.
+
+  1) <article> -> Examples include: a forum post, a magazine or newspaper article,
+                   or a blog entry, a product card, a user-submitted comment,
+                   or any other independent item of content.
+
+        <article class="forecast">
+         <h1>Weather forecast for Seattle</h1>
+            <article class="day-forecast">
+                <h2>03 March 2018</h2>
+                <p>Rain.</p>
+            </article>
+
+            <article class="day-forecast">
+                <h2>04 March 2018</h2>
+                <p>Periods of rain.</p>
+            </article>
+
+            <article class="day-forecast">
+                <h2>05 March 2018</h2>
+                <p>Heavy rain.</p>
+            </article>
+
+        </article>
+
+2) <figure> -> The <figure> HTML element represents self-contained content,
+               potentially with an optional caption, which is specified using 
+               the <figcaption> element. 
+
+           <figure>
+             <img src  ="/media/cc0-images/elephant-660-480.jpg"
+             alt  ="Elephant at sunset
+
+             <figcaption> An elephant at sunset</figcaption>
+           </figure>
+
+  3) <aside> ->  Asides are frequently presented as sidebars or call-out boxes.
+
+          <aside>
+            <p>The Rough-skinned Newt defends itself with a deadly neurotoxin.</p>
+          </aside>
+
+  4) <header> ->  The <header> HTML element represents introductory content,
+                  typically a group of introductory or navigational aids.
+                  It may contain some heading elements but also a logo,
+                  a search form, an author name, and other elements.
+
+          Ex -> <header>
+                   <a class="logo" href="#">Cute Puppies Express!</a>
+                </header>
+
+             <article>
+                  <header>
+                      <h1>Beagles</h1>
+                      <time>08.12.2014</time>
+                  </header>
+
+                  <p>I love beagles <em>so</em> much! Like, really, a lot. They’re adorable and their ears are so, so snuggly soft!</p>
+             </article>
+    
+    
+      -->
+
+
+
+
+
+     
+</body>
+</html>

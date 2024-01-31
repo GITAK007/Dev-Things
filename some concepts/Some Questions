@@ -1,0 +1,56 @@
+
+(Q1) What is the difference between a <header> and <h1> tag ?
+
+Ans-> The <header> tag is used to define a container for introductory 
+       content or a set of navigational links. 
+      It typically includes a logo or site title, and sometimes 
+       the main navigation menu.
+  where as,
+         The <h1> tag, on the other hand, is used to define a heading.
+         It is used to indicate the most important heading on a page,
+         and typically contains the main topic of the page.
+         It is one of six heading levels (h1-h6) that can be used to 
+         indicate the hierarchy of headings on a page.
+    
+   ( In summary, the <header> tag is used to define a container for 
+    introductory content and navigation, while the <h1> tag is used
+     to define the main heading of a page. 
+    The <header> tag can include other elements like <nav> and 
+        <h1> as well as other headings.)
+
+(Q2)Can footer have header tag ?
+
+Ans -> No this isn't valid.
+       The header element represents a header for the content,
+        however the header element must not be a descendant of the
+         footer element.
+{
+<!-- This one is technically correct and a good Practice -->
+<header>
+    //code goes here
+</header>
+<content>
+    //code goes here
+    //code goes here
+</content>
+<footer>
+    //code goes here
+</footer>
+}
+
+{
+<!-- This one is technically nt correct and a bad Practice -->
+<html>
+    <head>
+        <title>Title</title>
+    </head>
+
+    <body>
+         <footer>
+             <header>
+             </header>
+         </footer>
+
+    </body>
+</html>
+}

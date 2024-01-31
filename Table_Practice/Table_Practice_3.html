@@ -1,0 +1,89 @@
+<!-- 1) use of column group 'colgroup', when want to define things in series of column we put it into colgroup.   -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        table ,tr, td ,th{
+            text-align: center;
+            border: 1px solid black;
+            border-collapse: collapse;
+            /* padding: 5px; */
+            /* font-size: 20px; */
+        }
+        
+    </style>
+</head>
+
+
+<body>
+    <table>
+ <!-- Q1) put color yellowgreen up to 3 column -->
+       <!-- <colgroup>
+           <col span ="3" style="background-color: yellowgreen;">
+       </colgroup> -->
+
+<!-- Q2) put color grey of col 2,3,4 -->
+       <!-- <colgroup>
+                <col span = "1"> 
+                <col span = "3" style="background-color: grey;">
+       </colgroup>
+        -->
+<!-- Q3) put color red of col 2 & 4 -->
+      <!-- <colgroup>
+        <col span = "1">
+        <col span = "1" style="background-color: red;">
+        <col span = "1">
+        <col span = "1" style="background-color: red;">
+       </colgroup> -->
+
+<!-- Q4) Hide the col 3-->
+       <colgroup>
+            <col span="1">
+            <col span="1">
+            <col span="1" style="visibility: collapse;"> <!-- This visibility: collapse Properties hide the 3 col  -->
+       </colgroup>
+
+
+        <tr>
+            <td>col1</td>
+            <td>col2</td>
+            <td>col3</td>
+            <td>col4</td>
+            <td>col5</td>
+        </tr>
+
+        <tr>
+            <td>45</td>
+            <td>23</td>
+            <td>54</td>
+            <td>65</td>
+            <td>45</td>
+            
+        </tr>
+
+        <tr>
+            <td>85</td>
+            <td>98</td>
+            <td>93</td>
+            <td>98</td>
+            <td>78</td>
+        </tr>
+
+        <tr>
+            <td>56</td>
+            <td>44</td>
+            <td>24</td>
+            <td>98</td>
+            <td>23</td>
+        </tr>
+
+    </table>
+    
+
+</body>
+</html>
